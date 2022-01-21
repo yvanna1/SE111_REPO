@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="yvanna, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--in document styling css below-->
+    <style>
+    /*in here we must write in css*
+
+    /*selecting in css and javascript:select/chose specific element
+    (s) on a page for styling or manipulation:after
+
+    *by element/tag type         ex:body,div,p
+    *by id attributes name       ex:#wrapper, #footer
+    *by class attributes name    coming in week 3 :(
+    */
+
+    div{/*applies to all div elements on the page*/
+        border:1px solid black;
+        padding:10px;
+        margin:5px;
+    }
+
+    #wrapper {/*applies only to the element with an id of "wrapper" */
+     background-color:white;
+    }
+
+    #school {
+        background-color:coral;
+    }
+
+    #nav, #footer {
+        background-color:rgb(10, 114, 114)
+    }
+
+    </style>
+</head>
+<body style="background-color:rgb(173, 129, 214)">
+<!--this div hold and "wraps" around all content on the page-->
+<!--never put space in id name; can use underscore or dash-->
+
+<div id="wrapper">
+<!--id names can only be used 1x per page-->
+<h1>yvanna rosario</h1>
+
+
+    <!--navigation bar-->
+     <div id="nav">
+     <!--linking to outside pages[not part of our site]-->
+     <a href="#bio">bio</a>
+     <a href="#schooling">schooling</a>
+
+     
+
+     <!--href holds the url of the site you are linking to-->
+     <!-- target="_blank" makes a new tab in your link-->
+
+     <!--linking to internal pages [.html that exist in your current root direcyory]-->
+     <a href="page2.html">page 2</a>
+
+     <!--in page linking [jumping to sections of the current page]-->
+
+     <!--fragment link [jumping to a specific point on another page]-->
+      
+  </div><!--/ #nav-->
+
+    <!--bio selection-->
+<div id="#bio">
+        
+    <h2>about me</h2>
+    <p>Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> 
+    a man can be brave.A forked purple lightning bolt, on black field speckled with 
+    four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. 
+    Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing 
+    and the wall. It's ten thousand miles between Kings landing and the wall.</p>
+
+     <!--remote image link example [image file not in root directory,
+     need to use an absolute path (url + uri at end)]-->
+     <!-- avoid remote image links at all cost-->
+     <img src="https://www.hdwallpaper.nu/wp-content/uploads/2018/03/game_of_thrones-15.jpg" 
+     alt="aria standing outside" style="width:500px;" title="favorite character">
+
+     <!--relative image link below [image file exsists in current root directory]-->
+     <img src="images/stormsEnd.jpg" alt="illustration of 
+     storm's end seaside castle in summer" style="width:500px;">
+
+</div><!--/  #bio-->
+
+    <!--schools section-->
+<div id="#schools">
+
+</div><!--/ #school-->
+
+    <!--hobbies section-->
+<div id="#hobbies">
+
+</div><!--/ #hobbies-->
+
+    <!--footer-->
+<div id="footer">
+
+</div><!--/ #footer-->
+
+
+</div>
+</body>
+</html>
