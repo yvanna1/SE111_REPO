@@ -10,6 +10,7 @@
 
     <!--in document styling css below-->
     <style>
+        a{text-decoration: none;}
     /*in here we must write in css*
 
     /*selecting in css and javascript:select/chose specific element
@@ -21,41 +22,49 @@
     */
 
     div{/*applies to all div elements on the page*/
-        border:1px solid black;
+        border:1px solid rgb(72, 4, 75);
         padding:10px;
         margin:5px;
     }
 
     #wrapper {/*applies only to the element with an id of "wrapper" */
-     background-color:white;
+     background-color:rgb(243, 217, 243);
     }
 
     #school {
-        background-color:coral;
+        background-color:rgb(8, 124, 95);
     }
 
+
+
     #nav, #footer {
-        background-color:rgb(21, 168, 119)
+       background-color:rgb(211, 117, 221); }
+
+       a{ margin-right:25px;
+    } 
+    
+    #footer {
+        font-size:20px; text-align:center;
     }
 
     </style>
 </head>
-<body style="background-color:rgb(173, 129, 214)">
+<body style="background-color:rgb(153, 245, 214)">
 <!--this div hold and "wraps" around all content on the page-->
 <!--never put space in id name; can use underscore or dash-->
 
 <div id="wrapper">
 <!--id names can only be used 1x per page-->
-<h1>yvanna rosario</h1>
+<h1>  yvanna rosario</h1>
 
 
     <!--navigation bar-->
      <div id="nav">
      <!--linking to outside pages[not part of our site]-->
-     <a style="font-size:25px;" href="#bio"> Bio </a>
-     <a style= "font-size:25px;" href="#schooling">  Schooling </a>
-     <a style= "font-size:25px;" href="#hobbies">  Hobbies</a>
-     <a style="font-size:25px;" href="index.html">  Bottom of the page</a>
+     <a style="font-size:25px;"  href="#bio"> Bio</a>
+     <a style= "font-size:25px;" href="#schooling">Schooling </a>
+     <a style= "font-size:25px;" href="#hobbies"> Hobbies</a>
+     <a style="font-size:25px;" href="#footer">Bottom of the page</a>
 
 
      
@@ -73,16 +82,18 @@
   </div><!--/ #nav-->
 
     <!--bio selection-->
-    <div id="#bio">
-    <h2>about me</h2>
-    <p>my name is yvanna rosario. i was born in dominicain republic  on january 21 2005. when i was 4 years old i moved to the united states  i have 2 older sisters, a younger sister and a twin brother.</p>
-    <p>my favorite thing to do is watch anime. the first anime i've watched is attack on titains. i am currenytly watching hunter x hunter, jojo bizarre adventures,  and vinland saga.</p> 
-    <p>my favorite type of music is rap, but i listen to anything that sounds good besides country. i have 2 cats named henessey and corona. henessey is the older.  when im bored i like to draw. </p>
-     <br><img src="images/image_6483441.JPG"  alt="me jumping with mario" style="width:300px;" style="height:300px;" title="jumping wit mario">
+    <div id="bio">
+    <h2>About Me</h2>
+    <p>My name is Yvanna Rosario. I was born in Dominicain Republic on January 21 2005. When I was 4 years old I moved to the united states. I have 2 older sisters, a younger sister and a twin brother.</p>
+    <p>My favorite thing to do is watch anime. The first anime I've watched is <STRONG>Attack On Titains.</STRONG>  I am currenytly watching <b>Hunter X Hunter, Jojo Bizarre Adventures,</b> and <b>Vinland Saga.</b> </p> 
+    <p>My favorite type of music is rap, but I listen to anything that sounds good besides country. I have 2 cats named Henessey and Corona. Henessey is the older.  When I'm bored I like to draw. </p>
+    
+     <br><img src="images/image_6483441.JPG"  alt="me jumping with mario" style="width:300px; height:300px;" title="jumping wit mario">
      
      <!--remote image link example [image file not in root directory, need to use an absolute path (url + uri at end)]-->
      <!-- avoid remote image links at all cost-->
-     
+     <!--<img src="https://www.hdwallpaper.nu/wp-content/uploads/2018/03/game_of_thrones-15.jpg"
+         alt="aria standing outside" style="width:500px;" title="favorite character">-->
 
      <!--relative image link below [image file exsists in current root directory]-->
      <!-- <img src="images/stormsEnd.jpg" alt="illustration of 
@@ -93,33 +104,38 @@
 
 
     <!--schools section-->
-<div id="#schools">
+<div id="schooling">
 
-    <h3>schooling</h3>
-    <p>i went to sacket from kindergarden to first grade. i then went to young woods elementary school for the remaining years until middle school. i went to esek hopkins for middle school.</p>
-    <p>and i am now currently in village green virtual for highschool . </p>
-    <ol><li>sacket</li>
-    <li>young woods</li>
-    <li>esek hopkins</li>
-    <li>village green virtual</li></ol>
+    <h3>Schooling</h3>
+    <p>I went to Reservoir Avenue Elementary from kindergarden to the first grade. I then went to Young Woods elementary school. I went to Esek Hopkins for middle school.</p>
+    <p>I am now currently in <em>Village Green Virtual</em> for highschool . </p>
+    <ol><li>Reservoir Avenue</li>
+    <li>Young Woods</li>
+    <li>Esek Hopkins</li>
+    <li>Village Green Virtual</li></ol>
 
 </div><!--/ #school-->
 
     <!--hobbies section-->
-<div id="#hobbies">
-    <h4>hobbies</h4>
-    <p>some bobbies i have are video games. i like to play scary games but i also like story mode games aswell. my favorite video game to play right now is minecraft or resident evil.</p>
-     <p>i also like to cook although im not good at it. another hobbie i have is painting. </p>
-     <ul><li>video games</li><li>cooking</li><li>painting</li></ul>
-     <b><img src="images/image_123986672.JPG" alt="food i cooked" style:="width:300px;" style="height:500px;" title="sad cooking attempt">
-    <img src="images/image_6487327.JPG" alt="food i also cooked" style="width:400px;" style="height:200px;" title="another sad attempt"></b>
+<div id="hobbies">
+    <h4>Hobbies</h4>
+    <p>A hobbie I have is <I>video games</I>. I like to play scary games but I also like story mode games aswell. My favorite video game to play right now is minecraft or resident evil.</p>
+     <p>I also like to cook whenever I can. Another hobbie I have is painting. </p>
+     <p><a href="https://www.foodnetwork.com/" target="_blank">Food Network</a></p>
+     <ul>
+         <li>video games</li>
+         <li>cooking</li>
+         <li>painting</li>
+        </ul>
+      <img src="images/image_6487327.JPG" alt="food i also cooked" style="width:300px; height:300px;" title="another sad attempt">
 
 </div><!--/ #hobbies-->
 
     <!--footer-->
 <div id="footer">
-    <a href="index.html">back to the top</a>
-
+    <a href=#wrapper>back to the top</a>
+     <!--validation screen shot-->
+     
 </div><!--/ #footer-->
 
 
