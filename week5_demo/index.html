@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w5d1- forms and tables</title>
+</head>
+<body>
+    
+    <h2>Basic Table</h2>
+
+    <table>
+        <thead><!--this is for our colum headers- for organization-->
+            <!--if no info leave blank you cannot delete <td>-->
+            <tr><!--table row - must be outter element-->
+
+                <td>name</td><!--td= table data cell; one <td> for each column-->
+                <td>school</td>
+                <td>age</td>
+            </tr>
+
+
+        </thead>
+        <tbody><!--all tables must have a tbody- for main content of table-->
+            <tr>
+                <td>aereis</td>
+                <td></td><!--this is what i mean by leave blank-->
+                <td>17</td>
+            </tr>
+
+            <tr>
+                <td>tucker</td>
+                <td>cranston west hs</td>
+                <td>14</td>
+            </tr>
+
+            <tr>
+                <td>samantha</td>
+                <td>east greenwich hs</td>
+                <td>17</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot><!--this os for final sums or counts - for organization-->
+
+        </tfoot>
+
+
+    </table>
+
+    <h2>Basic Form w/o Table</h2>
+    <form method="GET" action="index.html">
+        
+            <!--<lable> is a text lable for the inputs-->
+            <!--for attributes must mach inputs id value -->
+            <label for="firstname">first name:</label>
+
+            <!--<input> gaining data from a user-->
+            <!--name attribute build the query string-->
+            <input type="text" id="firstname" name="firstname">
+
+            <br>
+
+            <label for="email">email:</label>
+            <input type="text" id="email" name="email">
+
+            <br>
+
+            <!--submit button! this connects to the method + action of the <form>, query
+                strings "needs" it to build-->
+                <br><!--makes it inline elements or block element: rn its a block-->
+            <input type="submit" value="Submit">
+
+    </form> 
+
+    <h2>Basic Form w/ Table</h2>
+
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td><!--left column; table-->
+                        <label for="firstname">first name:</label>
+                    </td>
+                        <td>
+                            <input type="text" id="firstname" name="firstname">
+                        </td>
+                    </tr>
+                    
+
+                    <tr>
+                        <td>
+                            <label for="email">email:</label>
+                        </td>
+
+                        <td>
+                            <input type="text" id="email" name="email" required>
+                        </td>
+                    </tr>
+
+
+                    <!--TYPE ATTRIBUTE DETERMINES INPUTE TYPE-->
+                    <tr>
+                        <td>
+                            <label for="date">date:</label>
+                        </td>
+
+                        <td>
+                            <input type="date" id="date" name="date">
+                        </td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td>
+                            <label for="comments">comments:</label>
+                        </td>
+                        <td>
+                            <textarea id="comments" name="comments" rows=5 cols=20
+                            placeholder="your comment here..." maxlength="50"></textarea>
+                        </td>
+                    </tr
+
+                    
+                   <tr>
+                        <td>
+                            <label for="fave color">pick your favorite color</label>
+                        </td>
+                        <!--select creates drop-dowm-->
+                        <td>
+                            <select name="favorite color">
+                                <option value="r">red</option>
+                                <option value="g">green</option>
+                                <option value="b">blue</option>
+                            </select>
+
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="study">chose your program study</label>
+                        </td>
+                        <!--radio buttons - circles- can only chose one out of a set 
+                            (set is determined by maching name values)-->
+                            <td>
+                                <input type="radio" value="se" name="study">software enginnering<br>
+                                <input type="radio" value="cyb" name="study">cybersecurity<br>
+                                <input type="radio" value="und" name="stuy">undecided<br>
+                            </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="vehicle">choose your vehicle</label>
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="vehicle1" value="car">car<br>
+                            <input type="checkbox" name="vehicle2" value="ship">ship<br>
+                            <input type="checkbox" name="vehicle3" value="horse">horse<br>
+                            <input type="checkbox" name="vehicle4" value="dragon">dragon<br>
+                        </td>
+                    </tr>
+                    
+                
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value=":D   ">
+                        </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    
+</body>
+</html>
