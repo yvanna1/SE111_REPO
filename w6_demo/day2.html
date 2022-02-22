@@ -43,21 +43,22 @@
 
         function FoodorDrink(_order)
         {
-         if(_order < 3)
-         {
+            
+             if(_order < 3)
+            {
               return `You want some Food.`
-         }
-         else if(_order === 3)
-         {
+            }
+            else if(_order === 3)
+             {
              return `Milkshake Time!`
-         }
-         else
-         {
+            }
+            else
+             {
               return `That is not a valid option.`
-         }
+             }
         }//FoodorDrink () close
 
-        alert(`Your choice: ${FoodorDrink(Number(order))}`)
+        alert(/*`Your choice:*/ `${FoodorDrink(Number(order))}`)
 
         function calcPriceWithTax(_price, _tax)
         {
@@ -98,31 +99,72 @@
         {
             switch(_item)//switch statement
             {
-                 case `Hamburger`:
+                case `Hamburger`:
+
                     return calcPriceWithTax(3.00, _tax)
+
                     break; //removes us out of the switch block {}
 
-                    case `Milkshake!`:
+                case `Milkshake!`:
+
                     return calcPriceWithTax(5.00, _tax)
+
                     break;
                     
-                    case `French Fries`:
+                case `French Fries`:
+
                     return calcPriceWithTax(1.00, _tax)
+
                     break;
 
+                case `Nothing`:
 
-                    case `Nothing`:
                     return calcPriceWithTax(0.00, _tax)
+
                     break;
             }
         }//gettotal() closed
 
         var total = getTotal(item, 20).toFixed(2)
+
         console.log(total)
 
-        alert(`Your total is ${total}`) 
+        alert(`Your total is $${total}`) 
         var paid = Number(prompt(`how much money do you have? please type how much money you have`))
+        
+        function calcChange(_paid, _total)
+        {
 
+            return _paid - _total
+
+        }
+
+        var change = calcChange(paid, total).toFixed(2)
+
+        function confirmOrder(_change)
+        {
+
+            if(_change < 0)
+            {
+                return `you don't have enough money.`
+            }
+            else
+            {
+                return `Your change is $${_change}.`
+            }
+
+        }//confirmOrder() CLOSE
+
+
+        //Alert user of their order confirmation
+        alert(confirmOrder(change))
+        
+        //test to the console
+        console.log(change)
+
+
+
+        
         /*challenged! continue the program by:
         *asking the user how much money they pay with
         *determine if that amount covers the build 
