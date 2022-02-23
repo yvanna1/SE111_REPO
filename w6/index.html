@@ -14,14 +14,14 @@
 
     <script>
       
-      var hourlypay = Number(prompt(`how much do you get payed in an hour`))
+      var paypay = Number(prompt(`how much do you get payed in an hour`))
       var hour = Number(prompt(`how many hours did you work this week`))
 
-      var grosspay = (hourlypay * hour)
-      var tax = (grosspay * 0.20)
-      var netpay = (grosspay - tax)
+      var paypay = (paypay * hour)
+      var tax = (paypay * 0.20)
+      var netpay = (paypay - tax)
 
-      console.log(`grosspay $${grosspay.toFixed(2)}`)
+      console.log(`grosspay $${paypay.toFixed(2)}`)
       console.log(`tax $${tax.toFixed(2)}`)
       console.log(`netpay $${netpay.toFixed(2)}`)
 
