@@ -59,17 +59,13 @@
                 </td>
             </tr>
 
-            <tr>
-                <td>
-                <br>
-                <br>
-                    <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
-                    <input type="button" id="enter-button" value="Enter">
-                </td>
-            </tr>
-
-        </table>
-
+         </table>   
+         <br>
+         <br>              
+          <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
+          <input type="button" id="enter-button" value="Enter">                    
+                
+        
 
         <br>
         <br>
@@ -177,18 +173,18 @@
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
             //when the #submit button is clicked, the submitNow function should run
             document.querySelector(`#submit`).addEventListener(`click`, alertName)
+            
        
 
-          //  function submitNow(e)
-           //{
-
+            function submitNow(e)
+           {
                 /*NOTE FOR TESTING:
                     *if written correctly, you will see an alert() with all info entered as well as processed!*/
 
                 alert(`${full}\nHOURS: ${hours}\nRATE: $${rate.toFixed(2)}\n\nGROSS PAY: $${gross.toFixed(2)}\nTAX AMOUNT: $${taxAmount.toFixed(2)}\nNET PAY: $${netpay.toFixed(2)}`)
-           //}
-         }    
-        
+           }
+             
+        }
         
     </script>
     
