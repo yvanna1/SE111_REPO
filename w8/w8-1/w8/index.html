@@ -34,17 +34,30 @@
 	<!--The script tag should go after the HMTL, but inside of the body.-->
 	<!--JavaScript cannot find tags, if they are not parsed before the script runs-->
     <script>
-	
+
 		//Store the elements (tags) in variables
 		
 		var fname = document.querySelector(`#first`)
         var lname = document.querySelector(`#last`)
 		var button = document.querySelector(`#button`)
 
-
-
 		//Make an array to store the people
-		var people = []
+		var people = [
+			{
+				first: `cersei`,
+				last: `lannister`	
+			},
+			{
+				first:`arya`,
+				last:`starks`
+			},
+
+			{
+				first: `daenerys`,
+				last:`targaryen`
+			}
+			
+		]
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
 		button.addEventListener(`click`, calcAndDisplay)
@@ -106,7 +119,7 @@
 			var output = ``
 
 			//Loop through the objects in the people array
-			for()//come back to this 
+			for(let i = 0; i < people.length; i++)//come back to this 
             {
 
 				//Loop through each property in the object
